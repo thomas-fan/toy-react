@@ -5,12 +5,15 @@ class MyComponent extends Component {
         return<div>
             <span>hello</span>
             <span>world</span>
+            <div>
+                {this.children}
+            </div>
         </div>
     }
 
 }
 
-let a = <MyComponent name="a" id="idMyComponent"></MyComponent>
+let a = <MyComponent name="a" id="idMyComponent"><div>abc</div></MyComponent>
 
 ToyReact.render(
     a,
